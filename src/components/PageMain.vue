@@ -39,6 +39,7 @@ export default {
             background-color: $brand_main_color;
             li{
                 display: flex;
+                align-items: center;
             }
         }
   }
