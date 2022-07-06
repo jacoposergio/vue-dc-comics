@@ -37,15 +37,26 @@ export default {
  header {
 
     .header-container{
+        padding: 0.5rem 2rem;
         display: flex;
         justify-content: space-between;
         background-color: white;
-        border: 1px solid black;
+        align-items: center;
 
-    }
-    .logo{
-        img{
-            width: 50px;
+        .logo{
+            margin-right: 100px;
+            img{
+                width: 50px;
+             }
+        }
+        nav{
+            ul{
+                display: flex;
+                li{
+                    margin-right: 1rem;
+                    font-size: 0.6rem;
+                }
+            }
         }
     }
  }
