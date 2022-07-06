@@ -1,5 +1,30 @@
 <template>
-  <div>ciao a todos</div>
+  <header>
+    <div class="header-container">
+        <div class="logo">
+            <img src="../assets/img/dc-logo.png" alt="dc logo">
+       </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">CHARACTERS</a>
+                </li>
+                  <li>
+                    <a href="#">CHARACTERS</a>
+                </li>
+                  <li>
+                    <a href="#">CHARACTERS</a>
+                </li>
+                  <li>
+                    <a href="#">CHARACTERS</a>
+                </li>
+                  <li>
+                    <a href="#">CHARACTERS</a>
+                </li>
+            </ul>
+        </nav>    
+    </div>
+  </header>
 </template>
 
 <script>
@@ -8,6 +33,20 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+ header {
 
+    .header-container{
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border: 1px solid black;
+
+    }
+    .logo{
+        img{
+            width: 50px;
+        }
+    }
+ }
 </style>
