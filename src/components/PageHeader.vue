@@ -80,12 +80,14 @@ export default {
 
 <style lang="scss" scoped>
  header {
+  background-color: white;
 
     .header-container{
+        width: 70%;
+        margin: 0 auto;
         padding: 0.5rem 2rem;
         display: flex;
         justify-content: space-between;
-        background-color: white;
         align-items: center;
 
         .logo{

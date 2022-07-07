@@ -9,7 +9,7 @@
         <ComicsCard  v-for="element, index in products" :key="index" :productDetails="element" />
     </div>
     <div class="load-more">
-
+        <a href="#">LOAD MORE</a>
     </div>
   </div>
 </template>
@@ -47,5 +47,20 @@ export default {
         width: 70%;
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .load-more{
+        text-align: center;   
+
+        a{
+            text-align: center;
+            background-color: $brand_main_color;
+            display: inline-block;
+            color: white;
+            padding: 0.3rem 2rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
     }
 </style>
