@@ -1,8 +1,5 @@
 <template>
    <main>
-    <div class="content-go-here">
-        <h2>Content goes here</h2>
-    </div>
     <div class="site-menu">
         <ul>
             <li v-for="link, index in menuLinks" :key="index">
@@ -71,9 +68,7 @@ export default {
                 justify-content: space-between;
                 align-items: center;
                 background-color: $brand_main_color;
-                padding: 1rem;
-                height: 200px;
-                padding: 0 3rem;
+                padding: 2rem 3rem;
             li{
                 display: flex;
                 align-items: center;
@@ -82,8 +77,7 @@ export default {
                 margin-right: 3rem;
 
                     .menu-img{
-                        max-width: calc((100%/5)*2);
-                        max-width: 40px;
+                        width: 40px;
                     }
 
                     .menu-text{
