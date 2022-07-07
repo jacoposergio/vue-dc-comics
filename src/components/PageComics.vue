@@ -1,10 +1,12 @@
 <template>
   <div>
     <div class="jumbotron">
-        jumbo
+        <div class="jumbo-img">
+            <img src="../assets/img/jumbotron.jpg" alt="jumbotron">
+        </div>
     </div>
     <div class="comics-list">
-        comics
+        comic
     </div>
     <div class="load-more">
 
@@ -19,6 +21,14 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+  @import '../style/variables.scss';
+    .jumbotron{
+        height: 300px;
 
+        .jumbo-img{
+            height: 100%;
+            overflow: hidden;
+        }
+    }
 </style>
