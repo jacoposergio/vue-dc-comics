@@ -56,18 +56,17 @@ export default {
   @import '../style/variables.scss';
 
   main{
-        .content-go-here{
-            padding: 3rem;
-            background-color: black;
-            color: white;
-            font-size: 0.8rem;
-        }
-        
+     background-color: $brand_main_color;
+  
+    
+     .site-menu{
+          margin: 0 auto;
+          width: 70%;
+     
         ul{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                background-color: $brand_main_color;
                 padding: 2rem 3rem;
             li{
                 display: flex;
@@ -87,5 +86,6 @@ export default {
                     }
               }
         }
-    }
+     }
+  }
 </style>
