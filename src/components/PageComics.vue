@@ -6,7 +6,7 @@
         </div>
     </div>
     <div class="comics-list">
-        comic
+        <ComicsCard  v-for="element, index in products" :key="index" :productDetails="element" />
     </div>
     <div class="load-more">
 
@@ -15,9 +15,19 @@
 </template>
 
 <script>
+import productsJson from '../assets/dc-comics.json';
+import ComicsCard from './ComicsCard.vue';
+
 export default {
     name: 'PageComics',
-
+    components: {
+        ComicsCard
+    },
+     data() {
+        return {
+            products: productsJson
+        };
+    }
 }
 </script>
 
@@ -30,5 +40,12 @@ export default {
             height: 100%;
             overflow: hidden;
         }
+    }
+
+    .comics-list{
+        margin: 2rem auto;
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
     }
 </style>
