@@ -1,6 +1,9 @@
 <template>
   <div class="comics-card">
-        <img :src="productDetails.thumb" :alt="productDetails.series">
+        <div class="img-container">
+
+            <img :src="productDetails.thumb" :alt="productDetails.series">
+        </div>
         <h3>{{ productDetails.series }}</h3>
     </div>
 </template>
@@ -22,7 +25,8 @@ export default {
     width: calc((100% / 6) - 10px);
     margin: 5px;
 
-    h3 {
+
+h3 {
         color: white;
         font-size: 1rem;
         font-weight: 300;

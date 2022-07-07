@@ -91,6 +91,7 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 100px ;
 
         .logo{
             margin-right: 100px;

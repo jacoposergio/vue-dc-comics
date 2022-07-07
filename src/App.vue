@@ -3,6 +3,7 @@
     <PageHeader/>
     <PageComics/>
     <PageMain/>
+    <PageFooter/>
   </div>
 </template>
 
@@ -10,6 +11,7 @@
  import PageHeader from './components/PageHeader.vue';
  import PageMain from './components/PageMain.vue';
  import PageComics from './components/PageComics.vue'; 
+ import PageFooter from './components/PageFooter.vue';
 
 export default {
     name: 'App',
@@ -17,6 +19,7 @@ export default {
       PageHeader,
       PageMain,
       PageComics,
+      PageFooter,
   },
 };
 </script>
