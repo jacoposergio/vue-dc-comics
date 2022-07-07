@@ -6,8 +6,8 @@
        </div>
         <nav>
             <ul>
-                <li v-for="link, index in navLinks" :key="index">
-                    <a href="#">{{link.text}}</a>
+                <li v-for="link, index in navLinks" :key="index" >
+                    <a :class="{ 'bottom-line': link.current }" href="#">{{link.text}}</a>
                 </li>
             </ul>
         </nav>    
@@ -79,6 +79,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '../style/variables.scss';
+
  header {
   background-color: white;
 
@@ -99,9 +101,15 @@ export default {
         nav{
             ul{
                 display: flex;
+
                 li{
                     margin-right: 1rem;
                     font-size: 0.8rem;
+
+                    .bottom-line{
+                       color: $brand_main_color;
+                       border-bottom: 3px solid $brand_main_color;
+                    }
                 }
             }
         }
